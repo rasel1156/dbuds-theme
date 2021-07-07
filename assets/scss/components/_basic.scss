@@ -1,0 +1,149 @@
+@import "variables";
+@import "fonts";
+@import "mixins";
+@import "class";
+
+html {
+    font-size: 10px;
+}
+body {
+    font-family: $default;
+    * {
+        color: $white;
+    }
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: $black;
+}
+a,
+a:visited,
+a:hover,
+a:link,
+a:active,
+a:focus {
+    text-decoration: none !important;
+    margin: 0px;
+    outline: none;
+    transition: 0.8s;
+    cursor: pointer;
+}
+button,
+button:visited,
+button:hover,
+button:link,
+button:active,
+button:focus {
+    text-decoration: none !important;
+    margin: 0px;
+    outline: none;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+p,
+ul,
+li,
+a,
+div,
+button,
+span {
+    font-size: 1.8rem;
+    margin: 0px;
+    font-weight: 300;
+    @include mobile {
+        font-size: 1.4rem;
+    }
+}
+
+ul {
+    padding: 0px;
+    list-style: none;
+    margin: 0px;
+}
+
+img {
+    max-width: 100%;
+}
+.dbuds {
+    clear: both;
+}
+/* ==========================================================================
+Some common css
+========================================================================== */
+body::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: $black;
+    border-radius: 5px;
+}
+//contact form-7
+.ajax-loader {
+    position: absolute !important;
+    top: 50%;
+    left: 50%;
+    width: 32px !important;
+    height: 32px !important;
+    background-image: url(../images/spiner.svg) !important;
+    background-size: 100% 100%;
+    margin-top: -16px !important;
+    margin-left: -16px !important;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+label.error {
+    display: none !important;
+}
+
+.four-zero-four {
+    @include flex-all(20px, center, center);
+    min-height: 50vh;
+    flex-wrap: wrap;
+    background: $white;
+    flex-direction: column;
+    * {
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase;
+        color: $black;
+    }
+    h1 {
+        margin: 0px;
+        margin-bottom: 20px;
+        font-size: 60rem;
+        font-weight: bold;
+    }
+    p {
+        margin: 0px;
+        letter-spacing: 2px;
+        font-size: 3rem;
+    }
+    .back-home {
+        @include flex-all(0px, center, center);
+    }
+    a {
+        @include flex-all(0px, center, center);
+        background: $black;
+        width: auto;
+        min-width: 180px;
+        height: 50px;
+        color: $white !important;
+        letter-spacing: 1px;
+        text-decoration: none !important;
+    }
+}

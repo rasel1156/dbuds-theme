@@ -1,0 +1,465 @@
+
+// media query
+@mixin lapbop {
+    @media screen and (min-width: 1150) and (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width: 769px) and (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+//  grid 
+@mixin grid($columns, $gap){
+    display: grid;
+    grid-template-columns: columns;
+    grid-gap: $gap;  
+}
+@mixin grid-all($columns, $gap, $align, $justif){
+    display: grid;
+    grid-template-columns: columns;
+    grid-gap: $gap; 
+    align-items: $align;
+    justify-content: $justify;
+}
+// flexbox
+@mixin flex($flexgap){
+    display: flex;
+    gap: $flexgap;
+    @include mobile() {
+        flex-wrap: wrap;
+    }
+}
+@mixin flex-all($gap, $align, $justif){
+    display: flex;
+    gap: $gap; 
+    align-items: $align;
+    justify-content: $justify;
+}
+
+// owl carousel
+@mixin owl-nav-none(){
+    .owl-nav{
+        display: none;
+    }
+}
+@mixin owl-dot-none(){
+    .owl-dots{
+        display: none;
+    }
+}
+@mixin owl-both-none(){
+    .owl-nav{
+        display: none;
+    }
+    .owl-dots{
+        display: none;
+    }
+}
+
+
+// padding
+// padding-top
+@mixin pt-10(){
+    padding-top: 10px;
+    @include tablet() {
+        padding-top: 10px;
+    }
+    @include mobile() {
+        padding-top: 10px;
+    }
+}
+@mixin pt-20(){
+    padding-top: 20px;
+    @include tablet() {
+        padding-top: 20px;
+    }
+    @include mobile() {
+        padding-top: 20px;
+    }
+}
+@mixin pt-25(){
+    padding-top: 25px;
+    @include tablet() {
+        padding-top: 25px;
+    }
+    @include mobile() {
+        padding-top: 25px;
+    }
+}
+@mixin pt-30(){
+    padding-top: 30px;
+    @include tablet() {
+        padding-top: 30px;
+    }
+    @include mobile() {
+        padding-top: 30px;
+    }
+}
+
+@mixin pt-35{
+    padding-top: 35px;
+    @include tablet() {
+        padding-top: 35px;
+    }
+    @include mobile() {
+        padding-top: 30px;
+    }
+}
+
+@mixin pt-40{
+    padding-top: 40px;
+    @include tablet() {
+        padding-top: 40px;
+    }
+    @include mobile() {
+        padding-top: 30px;
+    }
+}
+
+@mixin pt-45{
+    padding-top: 45px;
+    @include tablet() {
+        padding-top: 45px;
+    }
+    @include mobile() {
+        padding-top: 30px;
+    }
+}
+
+
+@mixin pt-50{
+    padding-top: 50px;
+    @include tablet() {
+        padding-top: 50px;
+    }
+    @include mobile() {
+        padding-top: 30px;
+    }
+}
+
+
+@mixin pt-55{
+    padding-top: 55px;
+    @include tablet() {
+        padding-top: 50px;
+    }
+    @include mobile() {
+        padding-top: 30px;
+    }
+}
+
+
+@mixin pt-60{
+    padding-top: 60px;
+    @include tablet() {
+        padding-top: 50px;
+    }
+    @include mobile() {
+        padding-top: 30px;
+    }
+}
+
+@mixin pt-65{
+    padding-top: 65px;
+    @include tablet() {
+        padding-top: 50px;
+    }
+    @include mobile() {
+        padding-top: 30px;
+    }
+}
+@mixin pt-70{
+    padding-top: 70px;
+    @include tablet() {
+        padding-top: 50px;
+    }
+    @include mobile() {
+        padding-top: 30px;
+    }
+}
+
+@mixin pt-75{
+    padding-top: 75px;
+    @include tablet() {
+        padding-top: 50px;
+    }
+    @include mobile() {
+        padding-top: 30px;
+    }
+}
+@mixin pt-80{
+    padding-top: 80px;
+    @include tablet() {
+        padding-top: 50px;
+    }
+    @include mobile() {
+        padding-top: 30px;
+    }
+}
+@mixin pt-85{
+    padding-top: 85px;
+    @include tablet() {
+        padding-top: 50px;
+    }
+    @include mobile() {
+        padding-top: 30px;
+    }
+}
+
+@mixin pt-90{
+    padding-top: 90px;
+    @include tablet() {
+        padding-top: 50px;
+    }
+    @include mobile() {
+        padding-top: 30px;
+    }
+}
+
+@mixin pt-95{
+    padding-top: 95px;
+    @include tablet() {
+        padding-top: 50px;
+    }
+    @include mobile() {
+        padding-top: 30px;
+    }
+}
+
+@mixin pt-100{
+    padding-top: 100px;
+    @include tablet() {
+        padding-top: 60px;
+    }
+    @include mobile() {
+        padding-top: 30px;
+    }
+}
+
+@mixin pt-110{
+    padding-top: 110px;
+    @include tablet() {
+        padding-top: 60px;
+    }
+    @include mobile() {
+        padding-top: 30px;
+    }
+}
+
+@mixin pt-120{
+    padding-top: 120px;
+    @include tablet() {
+        padding-top: 60px;
+    }
+    @include mobile() {
+        padding-top: 30px;
+    }
+}
+
+// padding-bottom
+@mixin pb-10(){
+    padding-bottom: 10px;
+    @include tablet() {
+        padding-bottom: 10px;
+    }
+    @include mobile() {
+        padding-bottom: 10px;
+    }
+}
+@mixin pb-20(){
+    padding-bottom: 20px;
+    @include tablet() {
+        padding-bottom: 20px;
+    }
+    @include mobile() {
+        padding-bottom: 20px;
+    }
+}
+@mixin pb-25(){
+    padding-bottom: 25px;
+    @include tablet() {
+        padding-bottom: 25px;
+    }
+    @include mobile() {
+        padding-bottom: 25px;
+    }
+}
+@mixin pb-30(){
+    padding-bottom: 30px;
+    @include tablet() {
+        padding-bottom: 30px;
+    }
+    @include mobile() {
+        padding-bottom: 30px;
+    }
+}
+
+@mixin pb-35{
+    padding-bottom: 35px;
+    @include tablet() {
+        padding-bottom: 35px;
+    }
+    @include mobile() {
+        padding-bottom: 30px;
+    }
+}
+
+@mixin pb-40{
+    padding-bottom: 40px;
+    @include tablet() {
+        padding-bottom: 40px;
+    }
+    @include mobile() {
+        padding-bottom: 30px;
+    }
+}
+
+@mixin pb-45{
+    padding-bottom: 45px;
+    @include tablet() {
+        padding-bottom: 45px;
+    }
+    @include mobile() {
+        padding-bottom: 30px;
+    }
+}
+
+
+@mixin pb-50{
+    padding-bottom: 50px;
+    @include tablet() {
+        padding-bottom: 50px;
+    }
+    @include mobile() {
+        padding-bottom: 30px;
+    }
+}
+
+
+@mixin pb-55{
+    padding-bottom: 55px;
+    @include tablet() {
+        padding-bottom: 50px;
+    }
+    @include mobile() {
+        padding-bottom: 30px;
+    }
+}
+
+
+@mixin pb-60{
+    padding-bottom: 60px;
+    @include tablet() {
+        padding-bottom: 50px;
+    }
+    @include mobile() {
+        padding-bottom: 30px;
+    }
+}
+
+@mixin pb-65{
+    padding-bottom: 65px;
+    @include tablet() {
+        padding-bottom: 50px;
+    }
+    @include mobile() {
+        padding-bottom: 30px;
+    }
+}
+@mixin pb-70{
+    padding-bottom: 70px;
+    @include tablet() {
+        padding-bottom: 50px;
+    }
+    @include mobile() {
+        padding-bottom: 30px;
+    }
+}
+
+@mixin pb-75{
+    padding-bottom: 75px;
+    @include tablet() {
+        padding-bottom: 50px;
+    }
+    @include mobile() {
+        padding-bottom: 30px;
+    }
+}
+@mixin pb-80{
+    padding-bottom: 80px;
+    @include tablet() {
+        padding-bottom: 50px;
+    }
+    @include mobile() {
+        padding-bottom: 30px;
+    }
+}
+@mixin pb-85{
+    padding-bottom: 85px;
+    @include tablet() {
+        padding-bottom: 50px;
+    }
+    @include mobile() {
+        padding-bottom: 30px;
+    }
+}
+
+@mixin pb-90{
+    padding-bottom: 90px;
+    @include tablet() {
+        padding-bottom: 50px;
+    }
+    @include mobile() {
+        padding-bottom: 30px;
+    }
+}
+
+@mixin pb-95{
+    padding-bottom: 95px;
+    @include tablet() {
+        padding-bottom: 50px;
+    }
+    @include mobile() {
+        padding-bottom: 30px;
+    }
+}
+
+@mixin pb-100{
+    padding-bottom: 100px;
+    @include tablet() {
+        padding-bottom: 60px;
+    }
+    @include mobile() {
+        padding-bottom: 30px;
+    }
+}
+
+@mixin pb-110{
+    padding-bottom: 110px;
+    @include tablet() {
+        padding-bottom: 60px;
+    }
+    @include mobile() {
+        padding-bottom: 30px;
+    }
+}
+
+@mixin pb-120{
+    padding-bottom: 120px;
+    @include tablet() {
+        padding-bottom: 60px;
+    }
+    @include mobile() {
+        padding-bottom: 30px;
+    }
+}

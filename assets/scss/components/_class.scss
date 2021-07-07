@@ -1,0 +1,184 @@
+@import 'variables';
+@import 'fonts';
+@import 'mixins';
+
+
+
+// container
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    clear: both;
+    padding: 0px 15px;
+    overflow: hidden;
+    height: auto;
+}
+.container-fluid {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin: 0 auto;
+    clear: both;
+    padding: 0px 15px;
+    overflow: hidden;
+    height: auto;
+}
+
+//grid colomn
+.grid-2{
+    grid-template-columns: repeat(2, 1fr) !important;
+}
+.grid-3{
+    grid-template-columns: repeat(3, 1fr) !important;
+}
+.grid-4{
+    grid-template-columns: repeat(4, 1fr) !important;
+}
+.grid-5{
+    grid-template-columns: repeat(5, 1fr) !important;
+}
+.grid-6{
+    grid-template-columns: repeat(6, 1fr) !important;
+}
+.grid-7{
+    grid-template-columns: repeat(7, 1fr) !important;
+}
+.grid-8{
+    grid-template-columns: repeat(8, 1fr) !important;
+}
+.grid-9{
+    grid-template-columns: repeat(9, 1fr) !important;
+}
+.grid-10{
+    grid-template-columns: repeat(10, 1fr) !important;
+}
+.grid-11{
+    grid-template-columns: repeat(11, 1fr) !important;
+}
+.grid-12{
+    grid-template-columns: repeat(12, 1fr) !important;
+}
+// class for padding
+.pt-10{
+    @include pt-20();
+}
+.pt-20{
+    @include pt-20();
+}
+.pt-25{
+    @include pt-25();
+}
+.pt-30{
+    @include pt-30();
+}
+.pt-35{
+    @include pt-35();
+}
+.pt-40{
+    @include pt-40();
+}
+.pt-45{
+    @include pt-45();
+}
+.pt-50{
+    @include pt-50();
+}
+.pt-55{
+    @include pt-55();
+}
+.pt-60{
+    @include pt-60();
+}
+.pt-65{
+    @include pt-65();
+}
+.pt-70{
+    @include pt-70();
+}
+.pt-75{
+    @include pt-75();
+}
+.pt-80{
+    @include pt-80();
+}
+.pt-85{
+    @include pt-85();
+}
+.pt-90{
+    @include pt-90();
+}
+.pt-95{
+    @include pt-95();
+}
+.pt-100{
+    @include pt-100();
+}
+.pt-110{
+    @include pt-110();
+}
+.pt-120{
+    @include pt-120();
+}
+.pb-10{
+    @include pb-20();
+}
+.pb-20{
+    @include pb-20();
+}
+.pb-25{
+    @include pb-25();
+}
+.pb-30{
+    @include pb-30();
+}
+.pb-35{
+    @include pb-35();
+}
+.pb-40{
+    @include pb-40();
+}
+.pb-45{
+    @include pb-45();
+}
+.pb-50{
+    @include pb-50();
+}
+.pb-55{
+    @include pb-55();
+}
+.pb-60{
+    @include pb-60();
+}
+.pb-65{
+    @include pb-65();
+}
+.pb-70{
+    @include pb-70();
+}
+.pb-75{
+    @include pb-75();
+}
+.pb-80{
+    @include pb-80();
+}
+.pb-85{
+    @include pb-85();
+}
+.pb-90{
+    @include pb-90();
+}
+.pb-95{
+    @include pb-95();
+}
+.pb-100{
+    @include pb-100();
+}
+.pb-110{
+    @include pb-110();
+}
+.pb-120{
+    @include pb-120();
+}
