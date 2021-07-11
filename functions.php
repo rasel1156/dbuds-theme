@@ -5,11 +5,12 @@
 function dbuds_essentials(){
 
 
-    /// theme supports
+    // theme supports
     add_theme_support('title-tag');
     add_theme_support( 'post-thumbnails' );
     add_theme_support( 'post-formats', array( 'aside', 'gallery' ) );
-
+    // shortcod eworks on widgets
+    //add_filter('widget_text', 'do_shortcode');
 
     //menu register
     register_nav_menus(array(
@@ -51,7 +52,7 @@ function dbuds_taxo(){
             'query_var' => true,
             'show_admin_column' => true,
             'rewrite' => array(
-                'slug' => 'protfolio-category',
+                'slug' => 'protfolio-category',     
                 'with_front' => true,
             )
         )
@@ -82,6 +83,7 @@ function cc_mime_types($mimes) { $mimes['svg'] = 'image/svg+xml'; return $mimes;
 
 
 require get_parent_theme_file_path('/inc/acf-mb.php');
+require get_parent_theme_file_path('/inc/theme-options.php');
 require get_parent_theme_file_path('/inc/widgets.php');
 require get_parent_theme_file_path('/inc/customizer.php');
 // require get_parent_theme_file_path('/inc/class-tgm-plugin-activation.php');
