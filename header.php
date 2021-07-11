@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <!-- Favicon-icon -->
-    <link rel="icon" type="image/icon" href="<?php echo esc_url(get_theme_mod('favi_icon')); ?>">
+    <link rel="icon" type="image/icon" href="<?php echo esc_url(the_field('favicon', 'option')); ?>">
     <!-- style css -->
     <link href="<?php esc_url(bloginfo('stylesheet_url')); ?>" rel="stylesheet">
 
